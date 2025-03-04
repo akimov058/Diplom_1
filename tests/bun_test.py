@@ -1,5 +1,4 @@
 from praktikum.bun import Bun
-import pytest
 from data.data import Data
 
 class TestBun:
@@ -7,6 +6,6 @@ class TestBun:
         bun = Bun(Data.BUN_NAME,Data.BUN_PRICE)
         assert bun.get_name() == Data.BUN_NAME
 
-    def test_get_price(self):
+    def test_get_price_bun(self):
         bun = Bun(Data.BUN_NAME,Data.BUN_PRICE)
         assert bun.get_price() == Data.BUN_PRICE
