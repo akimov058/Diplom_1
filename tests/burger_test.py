@@ -17,4 +17,14 @@ class TestBurger:
         burger.remove_ingredient(0)
         assert len(burger.ingredients)==0
 
+    def test_move_ingredient(self,mock_ingredient):
+        burger = Burger()
+        burger.add_ingredient(mock_ingredient)
+        burger1 = burger.ingredients[0]
+        burger.add_ingredient(mock_ingredient)
+        burger2 =burger.ingredients[1]
+        burger.move_ingredient(0,1)
+        assert burger1 == burger.ingredients[1] and burger2 == burger.ingredients[0]
+
+
 
