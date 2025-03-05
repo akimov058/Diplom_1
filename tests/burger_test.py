@@ -6,3 +6,7 @@ class TestBurger:
         burger.set_buns()
         assert mock_buns == burger.bun
 
+    def test_add_ingredient(self,mock_ingredient):
+        burger = Burger()
+        burger.add_ingredient(mock_ingredient)
+        assert burger.ingredients == mock_ingredient
