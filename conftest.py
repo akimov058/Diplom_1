@@ -15,3 +15,4 @@ def mock_ingredient():
     mock_ingredient.type = INGREDIENT_TYPE_SAUCE
     mock_ingredient.name = 'Cheese'
     mock_ingredient.price = 19.99
+    return mock_ingredient
